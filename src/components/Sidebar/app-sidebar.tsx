@@ -30,7 +30,7 @@ const data = {
     navMain: [
         {
             title: "Home",
-            url: "/home",
+            url: "/",
             icon: Home,
             items: [],
         },
@@ -47,9 +47,6 @@ const data = {
             items: [],
         },
     ],
-    // navSecondary: [
-    //     { title: "Support", url: "/support", icon: CircleAlert },
-    // ],
 }
 
 export function AppSidebar() {
@@ -111,18 +108,6 @@ export function AppSidebar() {
                     </SidebarMenu>
                 </SidebarGroup>
                 <SidebarGroup className="mt-auto">
-                    {/* <SidebarMenu>
-                        {data.navSecondary.map((item) => (
-                            <SidebarMenuItem key={item.title}>
-                                <SidebarMenuButton asChild size="sm" tooltip={item.title}>
-                                    <a href={item.url}>
-                                        <item.icon />
-                                        <span>{item.title}</span>
-                                    </a>
-                                </SidebarMenuButton>
-                            </SidebarMenuItem>
-                        ))}
-                    </SidebarMenu> */}
                 </SidebarGroup>
             </SidebarContent>
         </Sidebar>
